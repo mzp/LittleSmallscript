@@ -24,7 +24,7 @@ AutoTyper method: [
 ] dot: #first
 .
 AutoTyper method: [
-  @index > (@input dot: length - 1) ifFalse: [
+  @index > (@input size - 1) ifFalse: [
     @console text: (@console text + (@input at: @index)).
     @index += 1
   ] ifTrue: [null]
